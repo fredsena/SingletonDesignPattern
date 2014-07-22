@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="99dba99a-b0c8-484b-bfd8-29dbb918beab"
+  name="Singleton"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="1096a67c-3a88-40cf-a873-d21a7b0f76f2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSingletonDesignPattern.Singleton"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="53dc896d-112d-44f1-b7c8-70d7b961c150"
+        name="FileLogger"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2bc0a182-f02d-4c46-8217-5a3cb4782be2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="760cebc9-7927-4d1c-a826-6bbd7f569e93"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="536ad164-dba0-45bc-a14c-88c28b33d3ff">
+                <propertyInstance
+                  Id="82cafab0-67d4-4076-9228-d11d67ddcc30"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a095368d-ad6f-4958-922a-3d740a958147">
+                <propertyInstance
+                  Id="ae1cffa1-2d32-45ff-b196-4f3dc1adcd1e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec5adf80-2ef5-4faa-b5cd-452d822392a2">
+                <propertyInstance
+                  Id="0a499544-01f1-4c14-860c-f98e79629822"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c7bb5df-b0bd-428b-8cc1-ceb20f9de8c6">
+                <propertyInstance
+                  Id="44f8d6dc-544e-4e1d-84f8-9eebb7b419d5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c09ee875-de5b-48b3-a786-1a085c276a92">
+                <propertyInstance
+                  Id="6caacbf9-8d1c-48e9-8220-08f17b4d18a9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="8ad8fc3d-873a-4169-95f2-b6f7c29a2812"
+            isDerived="false"
+            sourceEndRoleName="FileLogger"
+            targetEndRoleName="Instance"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53dc896d-112d-44f1-b7c8-70d7b961c150"
+              LastKnownName="FileLogger"
+              LastKnownLocation="Package1_1709.uml" />
+            <description>Property Instance references type FileLogger.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b419df7b-dfdd-4461-9779-f43ad207e85a"
+                  name="FileLogger"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3cca2f89-6d3d-4d50-855b-1ad3651060f2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a8ba5ce5-8a6e-4e08-8fc5-e302ce2d1ea4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1bad370-0392-4de0-bd84-6ec0387e4e3a"
+                  name="Instance"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="44da4162-1516-4b9d-ba46-98513f87a0a9"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ce904613-311a-4929-b438-e12001cbd084"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d61e6429-8aa5-4691-ae21-f0608e57793c"
+            name="Instance"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4d576f45-dbd1-44f6-82e0-3fdbe24517f8"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger Member%3DInstance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1b322ea-659e-4167-897e-880d4aabfc89"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81407bcc-85de-4025-b445-47009d21305f">
+                    <propertyInstance
+                      Id="dd6bf636-345f-45b4-9117-c984363c1857"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0bdd1a7-38ef-4a45-a9d2-e6b0c4d6424c">
+                    <propertyInstance
+                      Id="51c79241-59d9-42ef-a1c2-3407493aed95"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92794916-7713-4956-bab6-90d41824c346">
+                    <propertyInstance
+                      Id="701a065c-ea39-468a-8391-7157412be4f9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68278d78-3113-4e5b-94c1-be8c3e7a7e9a">
+                    <propertyInstance
+                      Id="e30eb6f5-c9a3-4310-8dbe-81a751fdce01"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c164a4fb-96ee-4c9a-9de4-e6b99da4434f">
+                    <propertyInstance
+                      Id="52da5178-dcd5-4c87-a893-5857cc4e28ac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7594225-57ba-4e0b-8e71-8c71073ce711">
+                    <propertyInstance
+                      Id="d009d19f-7f45-43e3-b4af-446dec6ae11a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d3a3062-52a3-47ce-94ee-ae405ea62043">
+                    <propertyInstance
+                      Id="2a2c5aef-e543-4bdb-a3b6-daebc143b0ea"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="53dc896d-112d-44f1-b7c8-70d7b961c150"
+                LastKnownName="FileLogger"
+                LastKnownLocation="Package1_1709.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0e48241e-e9aa-4208-b06d-3907ce4be731"
+            name="TextFile"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c3fbcc5c-21b2-43b4-857c-199ce1571f80"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger Member%3DTextFile"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="88511397-fbba-4ea1-81ce-3da96177ea48"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="404b59d9-df7b-40c2-bc63-03a91d637ffe">
+                    <propertyInstance
+                      Id="6b17d9b8-4f52-4fba-9838-8f78b5d953f6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecb0b816-cc82-4d13-92c1-79ad6d892255">
+                    <propertyInstance
+                      Id="fd6c2f65-9603-470a-8f0a-e02dc7409b66"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="156ccc19-b624-4212-84cc-efc717831db7">
+                    <propertyInstance
+                      Id="24ae9c97-e7fb-4fbe-8fd8-eaba470192a5"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="226b52a9-6ad8-4281-95d5-9e3968faf612">
+                    <propertyInstance
+                      Id="094f6fc7-5f82-4edf-97c4-1f6c80427037"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="695df819-bf13-4fa1-8e02-ddc605214a65">
+                    <propertyInstance
+                      Id="1a2bc145-83bc-4087-9aeb-2f6065adb67b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8780568c-a3df-4d83-94c0-012182fe7c0e"
+                LastKnownName="StreamWriter"
+                LastKnownLocation="Package3_1709.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7bd8d7bf-f7ef-4a62-8af9-bdb05c6638f5"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6ae2531f-7dc9-4f80-a2f8-7e27d7d1915a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger Member%3D_instance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6e05caff-b6b8-4e1e-96b5-a0db43500d21"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="897fa8d1-286d-486f-af9c-f131323583b0">
+                    <propertyInstance
+                      Id="3b3fe3f4-0245-4ef4-ba86-757aec83e93d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c355e4a-ffc8-4058-8adc-e196e237086f">
+                    <propertyInstance
+                      Id="d6811aaa-8915-4b8e-a414-4c5e637911ef"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f90bd3dd-ff2b-4332-8f1b-92d3e10b56ec">
+                    <propertyInstance
+                      Id="94d22499-7be8-4d23-b21c-0419270634c1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bca22cc-1674-4b68-903f-f0ca6c93cca7">
+                    <propertyInstance
+                      Id="c3899eb8-41ad-4d10-ac6a-190706444f00"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a545d97d-009d-404c-b03d-1b3ce498cdb3">
+                    <propertyInstance
+                      Id="e9b11c89-1a15-4f36-a61d-9f6b08d20b98"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="53dc896d-112d-44f1-b7c8-70d7b961c150"
+                LastKnownName="FileLogger"
+                LastKnownLocation="Package1_1709.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="203f7205-e9b0-4f01-bf2a-9a2a2c2f40f7"
+            name="lockThis"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c5663b67-ee52-44d3-8b29-a58260a5e6e9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger Member%3DlockThis"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9a83cc55-e98a-4319-9062-709157782d81"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f14bd95d-1d62-4b1a-823c-ec0e7465706b">
+                    <propertyInstance
+                      Id="8c5e62ff-09d8-44ca-b5f0-349a008decb6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0048cc72-3302-4ba4-8379-7f76541509fc">
+                    <propertyInstance
+                      Id="e3ef3af7-e23e-4118-a2a1-a4751ffd268b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="584f19cf-1da3-4cb0-bf40-f9decea4fa71">
+                    <propertyInstance
+                      Id="1025088f-b93a-4f52-ae89-b7db97634206"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d75cb90-fd21-4044-bec6-f0b90ed6e3ba">
+                    <propertyInstance
+                      Id="f4f1c203-b315-4b8f-abc0-0e4d86896927"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b15feb52-0f0b-4145-a3a5-498af6d33d46">
+                    <propertyInstance
+                      Id="19145837-31ff-48ef-86a6-be5be9b4caad"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c71a6291-a882-4b96-9848-173d40eb84fc"
+                LastKnownName="Object"
+                LastKnownLocation="Package2_1709.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5de6b965-019e-49f0-8236-40da6dd0ca00"
+            name="WriteToFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e1acc0a6-5fa0-4342-80ab-432dc18f9f0d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger Member%3D(Name%3DWriteToFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a3de2eb9-8b7d-4c55-81de-e376823c7d1c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a174640-3a55-4239-8f2e-a213d15df1dc">
+                    <propertyInstance
+                      Id="a23db4b4-b62f-4eb5-979e-b3481c4ffced"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1ff9840-fe9c-4d0d-b960-4f12eae520d6">
+                    <propertyInstance
+                      Id="9c16b6d9-1f72-416b-9258-5bacc7e12232"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a7aec32-683d-4061-ac7f-2765eb8cfbcf">
+                    <propertyInstance
+                      Id="3ba86f60-ff7f-4b98-8e4e-8798e9036a55"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f547f61c-246f-4c8d-9d81-4bb698722f62">
+                    <propertyInstance
+                      Id="2b05db2f-be3e-482b-838c-2df0a3480258"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63be96f3-a568-4b74-af7a-7edd8de028cc">
+                    <propertyInstance
+                      Id="dda31340-a7c2-4e67-abb0-b258ef4ee3fb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d85ca64-486b-45c5-b191-0795854d473b">
+                    <propertyInstance
+                      Id="ad80cff5-2a13-4391-b613-5bfece1f90b8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c70fcf5d-0550-4c31-be31-9c41798dba49"
+                  name="text"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="58571d34-5531-42d4-a49d-a52d60202b75"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger Member%3D(Name%3DWriteToFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dtext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="587648a7-9c9b-4f96-813e-5a63098892ff"
+            name="FileLogger"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1f781d0d-7294-43ac-af36-dc7f9b19704b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="908de5a6-fbda-49c3-bb70-4f2e28f0d9d7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="449966f9-42fa-4847-9688-d224624fa6b4">
+                    <propertyInstance
+                      Id="e7cef140-7302-4159-8304-0bc0d531fb14"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af3123ff-b957-4d46-a3e6-fa7f7b8b06d0">
+                    <propertyInstance
+                      Id="299b3664-eff1-4f30-9fda-188257ae2789"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="464f3c82-c8e4-4734-b022-199e345f8e07">
+                    <propertyInstance
+                      Id="0ae21eed-d378-4c71-a10b-9c8028729027"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="379414ee-2627-4e75-827c-e1ebfe364356">
+                    <propertyInstance
+                      Id="6eb802e4-6ea4-4ac6-b4c9-39f5a4eb1ea5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc06d748-7c77-4aea-804d-cc53d6a961b6">
+                    <propertyInstance
+                      Id="53cb9a09-fb3e-457b-8598-43e2c5b2dd80"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e2d9db9-8f13-4f22-88eb-7753aea18e3e">
+                    <propertyInstance
+                      Id="1f510487-dec2-4cca-8db9-c3d2c9024a8b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="1369dc0f-a3e0-4d0e-8d39-9e63cf52c3fd"
+            name="CloseFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="aaa0626c-7039-4ccb-a93a-f7607c2e63a9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FDesign Patterns%2FSingleton Design Pattern%2FSingletonDesignPattern%2Fbin%2FDebug%2FSingletonDesignPattern.exe&quot; Namespace%3DSingletonDesignPattern.Singleton Type%3DFileLogger Member%3DCloseFile"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1ce6df00-1215-42bc-b2c6-be1dfe292359"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="406e247b-91d7-43a4-8fe6-5ee2175df256">
+                    <propertyInstance
+                      Id="f499fea9-570d-4de9-83bc-4382db4bcc4c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fe50ccc-a03e-462a-9018-3aed53c74292">
+                    <propertyInstance
+                      Id="b8812ea4-b224-4455-847d-0bf91f359a35"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fd2e587-b462-45fb-9da6-e8621ec0f950">
+                    <propertyInstance
+                      Id="ac837b04-9a9f-4fac-bd8b-28f9c8ef63de"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38984af8-625d-49a5-a163-8784970bbbcf">
+                    <propertyInstance
+                      Id="0fdf0455-16c0-432b-aa14-5ec891e3fd1e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dcd4652-2177-487e-9426-2f6846c7c6e5">
+                    <propertyInstance
+                      Id="90d8aec2-2ae6-4328-b735-b4c401d854e9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d143542e-7534-45b2-806d-f19614178536">
+                    <propertyInstance
+                      Id="a7eabada-e646-4236-97b5-625232b362ad"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
